@@ -19,7 +19,29 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
+main {
+  position: relative;
+  background: white;
+  height: 200px;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
 
+main div {
+  background: black;
+  color: white;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  resize: both;
+  overflow: auto;
+}
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
@@ -44,11 +66,11 @@
 </head>
 <body>
  
-<center>
+<main>
   <div class="vertical-center">
   <h2>Creating Payment</h2>
   <div>
   	<div class="loader"></div>
   </div>
     </div>
-</center>
+</main>
